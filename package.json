@@ -30,13 +30,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/Start-MainStage/react-native-android-liquid-glass-range-slider",
-  "author": "Start MainStage <startmainstage@gmail.com> (https://github.com/Start-MainStage)",
+  "repository": "https://github.com/johnp2002/react-native-android-liquid-glass-range-slider",
+  "author": "Start MainStage <startmainstage@gmail.com> (https://github.com/johnp2002)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Start-MainStage/react-native-android-liquid-glass-range-slider/issues"
+    "url": "https://github.com/johnp2002/react-native-android-liquid-glass-range-slider/issues"
   },
-  "homepage": "https://github.com/Start-MainStage/react-native-android-liquid-glass-range-slider#readme",
+  "homepage": "https://github.com/johnp2002/react-native-android-liquid-glass-range-slider#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
