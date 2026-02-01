@@ -2,6 +2,8 @@
 
 A React Native slider component with a unique Android "Liquid Glass" effect using OpenGL.
 
+![Demo](demo.gif)
+
 ## Installation
 
 ```sh
