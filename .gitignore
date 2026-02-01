@@ -1,0 +1,18 @@
+# General
+node_modules/
+.DS_Store
+*.log
+
+# Build outputs
+lib/
+android/build/
+ios/build/
+ios/Pods/
+
+# React Native
+.expo/
+dist/
+web-build/
+
+# Typescript
+*.tsbuildinfo
