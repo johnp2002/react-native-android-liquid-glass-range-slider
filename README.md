@@ -33,6 +33,9 @@ import { Slider } from 'react-native-android-liquid-glass-range-slider';
   refraction={0.25}
   offsetX={0}
   color="#37cf18"
+  onValueChange={(val) => {
+    console.log('Slider Progress:', val); // 0 to 1
+  }}
 />
 ```
 
@@ -48,11 +51,7 @@ All props are optional.
 | `thumbHeight` | `number` | `40` | Height of the slider thumb. |
 | `trackHeight` | `number` | `10` | Height of the slider track. |
 | `color` | `string` | `#37cf18` | Color of the active track. |
-
-### Liquid Glass Effect Props
-
-| Prop | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
+| `onValueChange` | `(value: number) => void` | `-` | Callback fired when the slider value changes. Returns normalized value `0` to `1`. |
 | `refraction` | `number` | `Native Default` | Controls the intensity of the refraction effect. |
 | `magnification` | `number` | `Native Default` | Controls the zoom level of the background sample. |
 | `offsetX` | `number` | `Native Default` | Horizontal offset for the glass effect. |
