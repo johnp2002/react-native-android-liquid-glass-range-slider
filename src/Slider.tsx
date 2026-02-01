@@ -8,6 +8,7 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withSpring,
+  runOnJS,
 } from 'react-native-reanimated'
 
 import { LiquidGlassView } from './LiquidGlassView'
@@ -21,6 +22,7 @@ interface SliderProps {
   offsetX?: number;
   offsetY?: number;
   color?: string;
+  onValueChange?: (value: number) => void;
 }
 
 const Slider = ({
@@ -32,6 +34,7 @@ const Slider = ({
   offsetX,
   offsetY,
   color = '#37cf18',
+  onValueChange,
 }: SliderProps) => {
   const [sliderWidth, setSliderWidth] = useState(0)
   const translateX = useSharedValue(0)
@@ -55,6 +58,9 @@ const Slider = ({
       if (newValue < 0) newValue = 0
       if (newValue > sliderWidth) newValue = sliderWidth
       translateX.value = newValue
+      if (onValueChange && sliderWidth > 0) {
+        runOnJS(onValueChange)(newValue / sliderWidth)
+      }
     })
     .onFinalize(() => {
       isActive.value = withSpring(0)

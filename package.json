@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-liquid-glass-range-slider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A liquid glass slider component for React Native Android",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
